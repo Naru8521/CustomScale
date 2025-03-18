@@ -1,6 +1,36 @@
 import { DimensionTypes, system, world } from "@minecraft/server";
 import EntityScale from "./modules/entityScale";
 
+system.afterEvents.scriptEventReceive.subscribe(ev => {
+    const { id, message, sourceEntity, initiator } = ev;
+
+    if (id === "c:s" && message === "reset") {
+        if (sourceEntity) {
+            const tags = sourceEntity.getTags();
+
+            for (const tag of tags) {
+                if (tag.startsWith("scale:")) {
+                    sourceEntity.removeTag(tag);
+                }
+            }
+
+            EntityScale.resetScale(sourceEntity);
+        }
+
+        if (initiator) {
+            const tags = initiator.getTags();
+
+            for (const tag of tags) {
+                if (tag.startsWith("scale:")) {
+                    initiator.removeTag(tag);
+                }
+            }
+
+            EntityScale.resetScale(initiator);
+        }
+    }
+});
+
 system.runInterval(() => {
     const dimensionIds = DimensionTypes.getAll().map(dimensionType => dimensionType.typeId);
 
