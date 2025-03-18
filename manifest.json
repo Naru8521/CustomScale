@@ -2,9 +2,9 @@
     "format_version": 2,
     "header": {
         "description": "エンティティの多きさをタグで変更することができます。\n製作:なるる\nYouTube:なるる-Naruru",
-        "name": "CustomScale v1.0.0",
+        "name": "CustomScale v1.0.1",
         "uuid": "e79c6f8e-3287-4750-8d16-e5eef152e285",
-        "version": [1, 0, 0],
+        "version": [1, 0, 1],
         "min_engine_version": [1, 21, 62]
     },
     "modules": [
@@ -13,7 +13,7 @@
             "type": "script",
             "language": "javascript",
             "uuid": "54ade91f-dd70-4a49-92c0-0d9c0aaa9d68",
-            "version": [1, 0, 0],
+            "version": [1, 0, 1],
             "entry": "scripts/index.js"
         }
     ],
