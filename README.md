@@ -4,7 +4,7 @@
 
 アドオンのダウンロードは[コチラ](https://github.com/Naru8521/CustomScale/releases)
 
-クラフターズコロニーは[コチラ](https://minecraft-mcworld.com/95845/)
+クラフターズコロニーは[コチラ](https://minecraft-mcworld.com/130923/)
 
 # ディスコードサーバー
 質問等は[コチラ](https://discord.com/invite/Mfn8HRhUfm)まで
